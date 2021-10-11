@@ -141,6 +141,12 @@ a {
   }
 }
 
+@media (min-width: $tablet-pro) {
+  .container {
+    width: $tablet-pro;
+  }
+}
+
 @media (min-width: $desktop) {
 
   .container {
