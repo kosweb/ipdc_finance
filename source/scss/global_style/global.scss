@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+	font-family: 'Metropolis', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: var(--black);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+picture {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.reset-list {
+  margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.button-default {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  word-break: break-all;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 25px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  word-break: break-all;
+  color: var(--white);
+  transition: all 0.1s ease;
+  cursor: pointer;
+  background-color: var(--fuchsia);
+  border: none;
+  border-radius: 4px;
+
+  &--clear {
+    color: var(--fuchsia);
+    background-color: transparent;
+    border: 1px solid var(--fuchsia);
+  }
+
+  &--round {
+    padding: 24px 24px 24px 76px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    text-transform: none;
+    background-color: var(--white);
+    border-radius: 55px;
+    box-shadow: 4px 4px 58px rgba(0, 0, 0, 0.12);
+  }
+
+  &__lil-letter {
+    text-transform: lowercase;
+  }
+}
+
+.title {
+  margin: 0;
+  color: rgba($color: var(--black), $alpha: 0.8);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: $phone;
+  padding-left: $phone-padding;
+  padding-right: $phone-padding;
+}
+
+@media (min-width: $tablet) {
+
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .container {
+    width: $tablet;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .container {
+    width: $desktop;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
+}
