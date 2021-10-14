@@ -225,3 +225,36 @@
     margin-right: 50px;
   }
 }
+
+@media (min-width: $desktop) {
+
+  .page-header {
+    border-bottom: none;
+    background: linear-gradient(to right, var(--white) 50%, var(--crystal) 50%);
+  }
+
+  .page-header__search-form {
+    justify-content: space-between;
+    width: 220px;
+  }
+
+  .page-header__search-field {
+    width: 50%;
+  }
+
+  .page-header__logo-wrapper {
+    flex-shrink: 0;
+  }
+
+	.page-header__logo-link {
+		margin-left: 0;
+	}
+
+	.page-header__button {
+		display: none;
+	}
+
+  .page-header__search-wrapper {
+    flex-shrink: 0;
+  }
+}

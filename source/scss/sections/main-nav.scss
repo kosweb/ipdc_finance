@@ -72,3 +72,30 @@
     justify-content: space-around;
   }
 }
+
+@media (min-width: $desktop) {
+
+  .main-nav {
+    position: static;
+    flex-grow: 1;
+    width: fit-content;
+    background-color: transparent;
+    transform: none;
+  }
+
+  .main-nav__list {
+    justify-content: space-between;
+    width: unset;
+    padding-left: 110px;
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    width: fit-content;
+  }
+
+  .main-nav__link {
+    font-size: 12px;
+    color: var(--black);
+  }
+}
