@@ -2,6 +2,7 @@
   position: relative;
   top: 81px;
   padding-top: 40px;
+	background: linear-gradient(to top, var(--crystal) 450px, var(--white) 450px);
 }
 
 .intro__title {
@@ -47,7 +48,7 @@
 }
 
 .intro__info-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .intro__carousel-wrapper {
@@ -129,6 +130,13 @@
 
   svg {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: $phone-max) {
+  .intro__wrapper {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
