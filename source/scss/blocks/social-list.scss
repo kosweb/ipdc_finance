@@ -1,0 +1,29 @@
+.social-list {
+  display: flex;
+}
+
+.social-list__item:not(.social-list__item:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &--facebook {
+    background-image: url('../img/facebook.svg');
+  }
+  &--youtube {
+    background-image: url('../img/youtube.svg');
+  }
+  &--linkedin {
+    background-image: url('../img/linkedin.svg');
+  }
+  &--instagram {
+    background-image: url('../img/instagram.svg');
+  }
+}

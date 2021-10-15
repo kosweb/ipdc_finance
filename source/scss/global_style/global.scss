@@ -130,6 +130,15 @@ a {
   padding-right: $phone-padding;
 }
 
+.call-button {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
 @media (min-width: $phone-retina) {
 
   .container {
