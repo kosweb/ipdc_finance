@@ -1,7 +1,4 @@
 .intro {
-  position: relative;
-  top: 81px;
-  padding-top: 40px;
 	background: linear-gradient(to top, var(--crystal) 450px, var(--white) 450px);
 }
 
@@ -134,6 +131,11 @@
 }
 
 @media (max-width: $phone-max) {
+
+  .intro {
+    padding-top: 121px;
+  }
+
   .intro__wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -144,7 +146,7 @@
 
 
   .intro {
-    padding-top: 0;
+    padding-top: 81px;
     background: linear-gradient(to right, var(--white) 50%, var(--crystal) 50%);
   }
 
@@ -253,8 +255,10 @@
 }
 
 @media (min-width: $desktop) {
+
   .intro {
     top: 0;
+    padding-top: 0;
   }
 
   .intro__info-wrapper {
@@ -268,6 +272,10 @@
   .intro__title {
     font-size: 63px;
     line-height: 68px;
+  }
+
+  .intro__carousel-wrapper {
+    position: relative;
   }
 
   .intro__carousel-item {
@@ -298,7 +306,8 @@
     position: absolute;
     z-index: 1;
     top: 300px;
-    right: 140px;
+    right: -30px;
+    margin-right: 0;
     flex-direction: column;
     width: fit-content;
     height: fit-content;

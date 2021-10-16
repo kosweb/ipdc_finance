@@ -146,6 +146,12 @@ a {
   }
 }
 
+@media (max-width: $phone-max) {
+  .title {
+    text-align: center;
+  }
+}
+
 @media (min-width: $tablet) {
 
   body {
