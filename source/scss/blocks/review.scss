@@ -33,11 +33,14 @@
 }
 
 .review__link {
-  display: block;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--fuchsia);
+
+  span {
+    margin-right: 15px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -76,16 +79,11 @@
   }
 
   .review__link {
-    display: flex;
-    align-items: center;
-		font-size: 19px;
+    justify-content: start;
+		font-size: 15px;
 		line-height: 26px;
 		margin-left: 0;
 		margin-right: 0;
-
-    span {
-      margin-right: 15px;
-    }
 	}
 }
 
@@ -124,5 +122,9 @@
     &--two {
 			padding-top: 125px;
     }
+  }
+
+  .review__link {
+    font-size: 19px;
   }
 }
