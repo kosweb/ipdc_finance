@@ -62,6 +62,9 @@
 }
 
 @media (min-width: $desktop) {
+  .results {
+    padding-top: 100px;
+  }
 
   .results__list {
     grid-row-gap: 55px;
