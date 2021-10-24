@@ -237,7 +237,9 @@
 
   .page-header__search-form {
     justify-content: space-between;
+    margin-right: 35px;
     width: 220px;
+    border: 1px solid var(--flamingo);
   }
 
   .page-header__search-field {

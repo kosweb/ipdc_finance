@@ -1,0 +1,113 @@
+.services {
+  padding-top: 75px;
+}
+
+.services__title {
+  margin-bottom: 30px;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.services__item {
+
+  &:nth-child(1) {
+    .services__link {
+      background-image: url('../img/service-1.jpg');
+    }
+  }
+  &:nth-child(2) {
+    .services__link {
+      background-image: url('../img/service-2.jpg');
+    }
+  }
+  &:nth-child(3) {
+    .services__link {
+      background-image: url('../img/service-3.jpg');
+    }
+  }
+  &:nth-child(4) {
+    .services__link {
+      background-image: url('../img/service-4.jpg');
+    }
+  }
+}
+
+.services__link {
+  display: block;
+  padding-top: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services__link-text {
+  position: relative;
+  display: flex;
+  padding-right: 25%;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(54, 57, 64, 1);
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -16px;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/arrowcircle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@media (min-width: $tablet) {
+
+  .services__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services__link-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-pro) {
+
+  .services__link {
+    padding-top: 340px;
+  }
+
+  .services__link-text {
+    padding-right: 40%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .services__list {
+    grid-gap: 50px;
+  }
+
+  .services__link {
+    padding-top: 390px;
+  }
+
+  .services__text {
+    width: unset;
+  }
+
+  .services__link-text {
+    padding-right: 30%;
+    font-size: 21px;
+    line-height: 35px;
+  }
+}

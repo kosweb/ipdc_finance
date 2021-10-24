@@ -6,12 +6,6 @@
   margin-bottom: 30px;
 }
 
-.features__text {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: rgba(153, 153, 153, 1);
-}
-
 .features__list {
   display: grid;
   grid-row-gap: 10px;
@@ -74,13 +68,13 @@
     font-size: 12px;
     line-height: 16px;
   }
-
-  .features__text {
-    text-align: center;
-  }
 }
 
 @media (min-width: $tablet) {
+
+  .features {
+    padding-top: 80px;
+  }
 
   .features__list {
     grid-template-columns: repeat(3, 1fr);
@@ -132,13 +126,6 @@
 	.features__item {
 		box-shadow: none;
 	}
-  .features__text {
-    text-align: center;
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 75px;
-  }
 
 	.features__item-title {
 		padding-top: 35px;
