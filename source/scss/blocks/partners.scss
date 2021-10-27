@@ -3,11 +3,6 @@
   padding-top: 75px;
 }
 
-.partners__list {
-  display: grid;
-  grid-row-gap: 15px;
-}
-
 .partners__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -21,18 +16,22 @@
 }
 
 .partners__item {
-  display: flex;
-  justify-content: flex-start;
+  padding: 5px;
+}
+
+.partners__item-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 }
 
 .partners__link {
   display: block;
-  width: 200px;
   height: 120px;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 
   &--westin {
     background-image: url('../img/partner-1.png');
@@ -46,22 +45,29 @@
   &--etv {
     background-image: url('../img/partner-4.png');
   }
-}
-
-.partners__bullet {
-  width: 50px;
-  height: 50px;
-}
-
-@media (max-width: $phone-max) {
-
-  .partners__bullets {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -30px;
-    flex-direction: column;
-    height: fit-content;
+  &--gst {
+    background-image: url('../img/partner-5.png');
+  }
+  &--tally {
+    background-image: url('../img/partner-6.png');
+  }
+  &--oracle {
+    background-image: url('../img/partner-7.png');
+  }
+  &--sap {
+    background-image: url('../img/partner-8.png');
+  }
+  &--prism {
+    background-image: url('../img/partner-9.png');
+  }
+  &--cemex {
+    background-image: url('../img/partner-10.png');
+  }
+  &--titan {
+    background-image: url('../img/partner-11.png');
+  }
+  &--republic {
+    background-image: url('../img/partner-12.png');
   }
 }
 
@@ -80,28 +86,15 @@
 }
 
 @media (min-width: $tablet-pro) {
-
-  .partners__list {
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 30px;
-  }
-
-  .partners__item {
-    justify-content: center;
-  }
-
-  .partners__item:nth-child(odd) {
-    justify-content: center;
+  .partners__item-wrapper {
+    padding: 20px;
   }
 }
 
 @media (min-width: $desktop) {
 
-  .partners__list {
-    margin-bottom: 40px;
-  }
-
-  .partners__link {
+  .partners__item-wrapper {
+    padding: 0;
     box-shadow: none;
   }
 

@@ -1,5 +1,5 @@
 .intro {
-	background: linear-gradient(to top, var(--crystal) 450px, var(--white) 450px);
+	background: linear-gradient(to top, var(--crystal) 400px, var(--white) 400px);
 }
 
 .intro__title {
@@ -202,10 +202,6 @@
     padding: 15px;
     box-shadow: rgba(99, 99, 99, 0.5) 0 2px 8px 0;
   }
-
-  .intro__carousel-bullets {
-    margin-right: $tablet-padding;
-  }
 }
 
 @media (min-width: $tablet-pro) {
@@ -246,7 +242,7 @@
   .intro__carousel-item {
     transform: scale(1.3);
     height: 500px;
-    width: 675px;
+    width: 640px;
     top: 90px;
     left: -65px;
   }
@@ -265,21 +261,5 @@
       top: 115px;
       right: 60px;
     }
-  }
-
-  .intro__carousel-bullets {
-    position: absolute;
-    z-index: 1;
-    top: 300px;
-    right: -30px;
-    margin-right: 0;
-    flex-direction: column;
-    width: fit-content;
-    height: fit-content;
-  }
-
-  .intro__carousel-bullet {
-    width: 30px;
-    height: 30px;
   }
 }
