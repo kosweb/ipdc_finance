@@ -48,6 +48,7 @@ footer {
 
 .footer__text {
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .footer__sub-list {
@@ -57,4 +58,64 @@ footer {
 .footer__social-button-wrapper {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: $desktop) {
+
+  .footer {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding-top: 60px;
+
+    .social-list {
+      justify-content: start;
+
+      .social-list__item:not(.social-list__item:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .footer__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: unset;
+  }
+
+  .footer__text {
+    margin-bottom: 35px;
+    width: 60%;
+    text-align: left;
+    color: var(--grey);
+    font-size: 14px;
+  }
+
+  .footer__social-button-wrapper {
+    justify-content: end;
+    align-items: start;
+  }
+
+  .footer__list-link {
+    text-align: left;
+
+    &--top {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: rgba(54, 57, 64, 1);
+      text-transform: unset;
+    }
+
+    &--sub {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: var(--grey);
+    }
+  }
+
+  .footer__sub-list {
+    display: block;
+  }
 }
