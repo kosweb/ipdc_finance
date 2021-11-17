@@ -78,7 +78,7 @@ a {
   text-transform: uppercase;
   word-break: break-all;
   color: var(--white);
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
   background-color: var(--fuchsia);
   border: none;
@@ -278,6 +278,11 @@ a {
   }
 
   .button {
+
+    &:hover {
+      box-shadow: 0 0.5em 0.5em -0.4em var(--fuchsia);
+      transform: translateY(-0.25em);
+    }
 
     &--round {
       box-shadow: 4px 4px 58px rgba(0, 0, 0, 0.12);
