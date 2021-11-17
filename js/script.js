@@ -26,6 +26,14 @@ const splide = new Splide( '.splide', {
 
 splide.mount();
 
+
+// let js = prompt('Какое «официальное» название JavaScript?');
+
+// let message = (js === 'ECMAScript') ? 'Верно!' :
+//   'Не знаете? ECMAScript!';
+
+// alert( message );
+
 const mainNavButton = document.querySelector('.page-header__button')
 const mainNavList = document.querySelector('.main-nav')
 
