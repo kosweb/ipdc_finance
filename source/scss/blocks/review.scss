@@ -81,7 +81,6 @@
   .review__link {
     justify-content: start;
 		font-size: 15px;
-		line-height: 26px;
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -126,5 +125,15 @@
 
   .review__link {
     font-size: 19px;
+
+    svg {
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(10px);
+      }
+    }
   }
 }

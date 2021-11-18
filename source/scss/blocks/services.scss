@@ -109,6 +109,24 @@
 
   .services__link {
     padding-top: 390px;
+
+    span {
+      transition: color 0.2s ease;
+
+      &::after {
+        transition: transform 0.2s ease;
+      }
+    }
+
+    &:hover {
+      span {
+        color: var(--fuchsia);
+
+        &::after {
+          transform: scale(1.3) rotate(-36deg);
+        }
+      }
+    }
   }
 
   .services__link-text {
