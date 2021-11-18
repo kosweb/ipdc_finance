@@ -1442,7 +1442,6 @@ footer {
   .review__link {
     justify-content: start;
     font-size: 15px;
-    line-height: 26px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -1761,12 +1760,36 @@ footer {
     font-size: 19px;
   }
 
+  .review__link svg {
+    transition: transform 0.2s ease;
+  }
+
+  .review__link:hover svg {
+    transform: translateX(10px);
+  }
+
   .services__list {
     grid-gap: 50px;
   }
 
   .services__link {
     padding-top: 390px;
+  }
+
+  .services__link span {
+    transition: color 0.2s ease;
+  }
+
+  .services__link span::after {
+    transition: transform 0.2s ease;
+  }
+
+  .services__link:hover span {
+    color: var(--fuchsia);
+  }
+
+  .services__link:hover span::after {
+    transform: scale(1.3) rotate(-36deg);
   }
 
   .services__link-text {
@@ -1841,6 +1864,7 @@ footer {
 
   .footer__list-link {
     text-align: left;
+    transition: color 0.2s ease;
   }
 
   .footer__list-link--top {
@@ -1854,6 +1878,10 @@ footer {
     margin-bottom: 10px;
     font-size: 14px;
     color: var(--grey);
+  }
+
+  .footer__list-link:hover {
+    color: var(--fuchsia);
   }
 
   .footer__sub-list {
